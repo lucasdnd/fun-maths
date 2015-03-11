@@ -1,6 +1,5 @@
 # Last digits of powers of 2
-# I noticed a pattern on the powers of 2: except on the first one,
-# the last digits repeat: 6, 2, 4 and 8.
+# I noticed a pattern on the powers of 2: the last digits repeat: 6, 2, 4 and 8.
 #
 # Example:
 #
