@@ -1,4 +1,4 @@
-(͡ ° ͜ʖ͡°) Fun Maths (͡ ° ͜ʖ͡°)
-===============================
+:smile: Fun Maths :smile:
+====
 
 Fun with Mathematics
