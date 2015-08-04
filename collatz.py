@@ -14,7 +14,7 @@ def collatz(num, steps):
     num += 1
 
   steps += 1
-  print "[" + str(steps) + "] = " + str(num)
+  print("[" + str(steps) + "] = " + str(int(num)))
 
   return collatz(num, steps) if num != 1 else 1
 
