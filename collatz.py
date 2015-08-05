@@ -5,19 +5,15 @@
 import sys
 input = input if sys.version_info.major == 3 else raw_input
 
-def collatz(num, steps):
+num = int(input("Enter a number: "))
+steps = 0
 
+while num != 1:
   if num % 2 == 0:
-    num /= 2
+    num //= 2
   else:
     num *= 3
     num += 1
 
   steps += 1
   print("[" + str(steps) + "] = " + str(int(num)))
-
-  return collatz(num, steps) if num != 1 else 1
-
-num = int(input("Enter a number: "))
-steps = 0
-collatz(num, steps)
