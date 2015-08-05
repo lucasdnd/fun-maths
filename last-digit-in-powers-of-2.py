@@ -10,12 +10,13 @@
 #
 # In this script, we test this thing.
 #
+import sys
+input = input if sys.version_info.major == 3 else raw_input
 
 for i in range(1, 16384):
 
   it_works = True
   result = pow(2, i)
-  print (result)
 
   if i % 4 == 0:
     if result % 10 != 6:

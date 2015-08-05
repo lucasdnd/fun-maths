@@ -19,4 +19,4 @@ def isPerfect(num):
 n = int(input("Print perfect numbers up to: "))
 for i in range(1, n):
   if isPerfect(i):
-    print str(i)
+    print(str(i))

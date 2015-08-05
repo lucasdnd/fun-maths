@@ -1,8 +1,10 @@
 import time
 import sys
 import math
+input = input if sys.version_info.major == 3 else raw_input
+xrange = range if sys.version_info.major == 3 else xrange
 
-out = file("result.txt", "w")
+out = open("result.txt", "w")
 
 def is_prime(num):
 
@@ -28,7 +30,7 @@ def find_nth_prime(num):
     i = i + 1
 
 if len(sys.argv) != 2:
-  print "Example usage: python 7-nth-prime.py 1000"
+  print("Example usage: python find-primes.py 1000")
   sys.exit()
 
 num = int(sys.argv[1])
@@ -36,5 +38,5 @@ start = time.time()
 find_nth_prime(num)
 end = time.time()
 out.close()
-print "Done in " + str(end - start)
-print "Result saved in result.txt"
+print("Done in " + str(end - start))
+print("Result saved in result.txt")

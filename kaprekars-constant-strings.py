@@ -38,11 +38,11 @@ def kaprekar(num, steps):
   result = desc - asc
 
   steps += 1
-  print "[" + str(steps) + "] -> " + str(desc) + " - " + str(asc) + " = " + str(result)
+  print("[" + str(steps) + "] -> " + str(desc) + " - " + str(asc) + " = " + str(result))
   
   return kaprekar(result, steps) if result != const else 1
 
-print "Enter a 4 digit number that is not made of the same numbers"
+print("Enter a 4 digit number that is not made of the same numbers")
 num = int(input("(can't be 1111, 2222, ...., or 9999): "))
 steps = 0
 kaprekar(num, steps)
