@@ -3,9 +3,12 @@
 # the following process: If n is even, divide it by 2. If n is odd, multiply it by 3 and add 1.
 
 import sys
-input = input if sys.version_info.major == 3 else raw_input
 
-num = int(input("Enter a number: "))
+if len(sys.argv) != 2:
+  print("Usage: python collatz.py number")
+  sys.exit()
+
+num = int(sys.argv[1])
 steps = 0
 
 while num != 1:
