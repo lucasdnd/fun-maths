@@ -8,7 +8,11 @@ if len(sys.argv) != 2:
   print("Usage: python collatz.py number")
   sys.exit()
 
-num = int(sys.argv[1])
+try:
+  num = int(sys.argv[1])
+except Exception as e:
+  print("Please, enter a valid number")
+  sys.exit()
 steps = 0
 
 while num != 1:
