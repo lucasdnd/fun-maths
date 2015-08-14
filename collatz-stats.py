@@ -14,9 +14,8 @@ def collatz(num):
       num += 1
 
     steps += 1
-    print("[" + str(steps) + "] = " + str(int(num)))
 
   return steps
 
-for i in range(1, 20):
+for i in range(2, 20):
   print(str(i) + ": " + str(collatz(i)))
