@@ -2,6 +2,13 @@
 # Start with a number n > 1. Find the number of steps it takes to reach one using
 # the following process: If n is even, divide it by 2. If n is odd, multiply it by 3 and add 1.
 
+import sys
+
+if len(sys.argv) != 2:
+  print("Usage: python collatz-stats.py number")
+  sys.exit()
+num = int(sys.argv[1])
+
 def collatz(num):
 
   steps = 0
@@ -17,5 +24,5 @@ def collatz(num):
 
   return steps
 
-for i in range(2, 20):
+for i in range(2, num + 1):
   print(str(i) + ": " + str(collatz(i)))
